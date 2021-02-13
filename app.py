@@ -37,7 +37,8 @@ def get_image_download_link(img):
 	buffered = BytesIO()
 	img.save(buffered, format="JPEG")
 	img_str = base64.b64encode(buffered.getvalue()).decode()
-	href = f'<a href="data:file/jpg;base64,{img_str}" download="capa.jpg">Download result</a>'
+	href = f'<a href="data:file/jpg;base64,{img_str}" download="capa.jpg">Clique aqui para baixar</a>'
 	return href
 
 st.markdown(get_image_download_link(img), unsafe_allow_html=True)
+st.write('[Quer contriuir? Mande um pull-request!](https://github.com/tkleyton/gerador-de-capa-unicamp)')
