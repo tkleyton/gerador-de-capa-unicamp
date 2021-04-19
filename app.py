@@ -41,4 +41,4 @@ def get_image_download_link(img):
 	return href
 
 st.markdown(get_image_download_link(img), unsafe_allow_html=True)
-st.write('[Quer contriuir? Mande um pull-request!](https://github.com/tkleyton/gerador-de-capa-unicamp)')
+st.write('[Quer contribuir? Mande um pull-request!](https://github.com/tkleyton/gerador-de-capa-unicamp)')
